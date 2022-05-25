@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/javascript.js"></script>
+    <title>Venta Skate</title>
+</head>
+<body>
+    <header>
+        <h2>Venta de productos de Skate</h2>
+    </header>
+    <main>
+        <h1>Que productos buscas?</h1>
+
+        <table>
+            <th>Origen
+                <select name="origen" id="origen">
+                    <option value="TODOS">Todos</option>
+                    <option value="NACIONAL">Nacional</option>
+                    <option value="IMPORTADA">Importada</option>
+                </select>
+            </th>
+            <th>Filtrar precio
+                <select name="filtrarPrecio" id="filtrarPrecio">
+                    <option value="ninguno">Ninguno</option>
+                    <option value="mayorPrecio">Mayor precio</option>
+                    <option value="menorPrecio">Menor precio</option>
+                </select>
+            </th>
+            <th>
+                <input type="button" value="BUSCAR" onclick="filtrarOrigen('origenIngresado')">
+            </th>
+            <tr>
+                <td><span id="mostrarProducto"></span></td>
+                <td><span id="mostrarPrecio"></span></td>
+                <td><input type="button" value="Agregar"></td>
+            </tr>
+        </table>
+        
+    </main>
+</body>
+</html>
