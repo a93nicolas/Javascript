@@ -1,3 +1,15 @@
+$bg-color-bl: rgb(34,34,34);
+$bg-color-wo: rgba(255,255,255,0.7);
+$title-font:'Big Shoulders Stencil Display', cursive;
+$primary-color: white;
+$hover-color: rgb(158, 156, 30);
+$title-size: 3em;
+$text-size: 1.3em;
+$text-size-l: 1em;
+$title-size-res: 3em;
+$font-size-res: 1.3em;
+$box-shadow-col: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+
 *{
     padding: 0px;
     margin: 0px;
@@ -6,11 +18,104 @@
     box-sizing: border-box;
 }
 
+html{
+    width: 100%;
+    height: 100%;
+}
+
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    min-width: 100%;
+    background-size: 100%;
+}
+
+.container > *{
+    box-shadow: $box-shadow-col;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    background-color: $bg-color-bl;
+    position: fixed;
+    width: 100vw;
+        .navegador{
+            display: flex ;
+            justify-content: space-between;
+                &_logo{
+                    width: 20vw;
+                    height: 10vh;
+                }
+                &_menu{
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 5vw;
+                    background-color: rgb(34, 37, 37);
+                    position: fixed;
+                    top: 10vh;
+                    width: 100%;
+                    right: 100%;
+                    transition: 0.3s;
+                    height: calc(100% - 10vh);
+                    overflow-y: auto;
+                }
+                &_item{
+                    font-size: 6vh;
+                    line-height: 10vh;
+                    margin: 0 1vw;
+                    text-transform: uppercase;
+                    width: max-content ;
+                }
+                &_link{
+                    padding: 0.7vw 0.7vh ;
+                    color: $primary-color;
+                    font-family:$title-font;                   
+                }
+                &_link:hover{
+                    background-color: #01192b;
+                    border-radius: 5px;
+                    color: $hover-color;
+                    transition: 0.3s;
+                }
+                &_hamburguesa{
+                    float: center;
+                    background-color: $bg-color-bl;
+                    color: $primary-color;
+                    border: none;
+                    font-size: 7vh;
+                    margin-right: 7vw;
+                    display: block;
+                    cursor: pointer;
+                        &:hover{
+                            background-color: #01192b;
+                            border-radius: 5px;
+                            color: $hover-color;
+                            transition: 0.15s;
+                        }
+                }
+        }
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
     text-align: center;
-    
-    .simulacro_plazo{
-        margin-left: 20%;
-        background: rgb(255, 53, 53);
-    }
+}
+
+.navegador_menu_visible{
+    right: 0;
 }

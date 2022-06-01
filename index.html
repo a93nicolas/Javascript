@@ -5,14 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&display=swap" rel="stylesheet">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet">
     <script src="js/javascript.js"></script>
     <title>Venta Skate</title>
 </head>
-<body>
+<body class="container">
     <header>
-        <h2>Venta de productos de Skate</h2>
+        <nav class="navegador">
+            <button class="navegador_hamburguesa">
+                <i class="fa-solid fa-bars seis"></i>
+            </button>
+                <ul class="navegador_menu navegador_menu_visible">
+                    <li class="navegador_item">
+                        <a href="#" class="navegador__link">Tablas</a>
+                    </li>
+                    <li class="navegador_item">
+                        <a href="#" class="navegador__link">Trucks</a>
+                    </li>
+                    <li class="navegador_item">
+                        <a href="#" class="navegador__link">Rulemanes</a>
+                    </li>
+                    <li class="navegador_item">
+                        <a href="#" class="navegador__link">Ruedas</a>
+                    </li>
+                </ul>
+            <h2 id="imagen_logo"><a href="index.html">Inicio</a></h2>
+            <input type="search" name="buscador-productos" id="buscador-productos">
+            <ul class="reg_log">
+                <li>
+                    <a href="pages/registrarse.html">Registrarse</a>
+                </li>
+                <li>
+                    <a href="pages/ingresar.html">Ingresar</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main class="content">
         <h1>Que productos buscas?</h1>
 
         <table>
