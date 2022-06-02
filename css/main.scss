@@ -73,13 +73,14 @@ header{
                     align-items: center;
                     background-color: rgb(34, 37, 37);
                     position: fixed;
-                    top: 6.9%;
+                    margin-top: 3%;
                     width: 20%;
                     height: 100%;
-                    right: 80%;
+                    right: 90%;
                     transition: 0.3s;
                     overflow-y: auto;
                 }
+                
                 &_item{
                     font-size: 6vh;
                     line-height: 10vh;
@@ -99,15 +100,18 @@ header{
                     transition: 0.3s;
                 }
                 &_logo{
-                    width: 0%;
+                    width: 15%;
                     height: 5vh;
-                    margin-top: 1%;
+                    margin-top: 0.2%;
                 }
                 &_buscador{
                     width: 50%;
-                    height: 5vh;
+                    height: 4vh;
                     margin-top: 0.5%;
                 }
+        }
+        .navegador_menu_visible{
+            right: 80%;
         }
 }
 
@@ -118,8 +122,4 @@ main{
 footer{
     grid-area: footer;
     text-align: center;
-}
-
-.navegador_menu_visible{
-    right: 50%;
 }

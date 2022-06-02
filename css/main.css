@@ -81,10 +81,10 @@ header .navegador_menu {
           align-items: center;
   background-color: #222525;
   position: fixed;
-  top: 6.9%;
+  margin-top: 3%;
   width: 20%;
   height: 100%;
-  right: 80%;
+  right: 90%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow-y: auto;
@@ -115,15 +115,19 @@ header .navegador_link:hover {
 }
 
 header .navegador_logo {
-  width: 0%;
+  width: 15%;
   height: 5vh;
-  margin-top: 1%;
+  margin-top: 0.2%;
 }
 
 header .navegador_buscador {
   width: 50%;
-  height: 5vh;
+  height: 4vh;
   margin-top: 0.5%;
+}
+
+header .navegador_menu_visible {
+  right: 80%;
 }
 
 main {
@@ -138,9 +142,5 @@ footer {
   -ms-grid-column: 1;
   grid-area: footer;
   text-align: center;
-}
-
-.navegador_menu_visible {
-  right: 50%;
 }
 /*# sourceMappingURL=main.css.map */
