@@ -30,8 +30,8 @@ body {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 10% 80% 10%;
-      grid-template-rows: 10% 80% 10%;
+  -ms-grid-rows: 5% 85% 10%;
+      grid-template-rows: 5% 85% 10%;
       grid-template-areas: "header" "main" "main" "footer";
 }
 
@@ -41,7 +41,7 @@ header {
   grid-area: header;
   background-color: #222222;
   position: fixed;
-  width: 100vw;
+  width: 100%;
 }
 
 header .navegador {
@@ -53,9 +53,22 @@ header .navegador {
           justify-content: space-between;
 }
 
-header .navegador_logo {
-  width: 20vw;
-  height: 10vh;
+header .navegador_hamburguesa {
+  float: center;
+  background-color: #222222;
+  color: white;
+  border: none;
+  font-size: 5vh;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+header .navegador_hamburguesa:hover {
+  background-color: #01192b;
+  border-radius: 5px;
+  color: #9e9c1e;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
 }
 
 header .navegador_menu {
@@ -66,15 +79,14 @@ header .navegador_menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 5vw;
   background-color: #222525;
   position: fixed;
-  top: 10vh;
-  width: 100%;
-  right: 100%;
+  top: 6.9%;
+  width: 20%;
+  height: 100%;
+  right: 80%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  height: calc(100% - 10vh);
   overflow-y: auto;
 }
 
@@ -102,23 +114,16 @@ header .navegador_link:hover {
   transition: 0.3s;
 }
 
-header .navegador_hamburguesa {
-  float: center;
-  background-color: #222222;
-  color: white;
-  border: none;
-  font-size: 7vh;
-  margin-right: 7vw;
-  display: block;
-  cursor: pointer;
+header .navegador_logo {
+  width: 0%;
+  height: 5vh;
+  margin-top: 1%;
 }
 
-header .navegador_hamburguesa:hover {
-  background-color: #01192b;
-  border-radius: 5px;
-  color: #9e9c1e;
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
+header .navegador_buscador {
+  width: 50%;
+  height: 5vh;
+  margin-top: 0.5%;
 }
 
 main {
@@ -136,6 +141,6 @@ footer {
 }
 
 .navegador_menu_visible {
-  right: 0;
+  right: 50%;
 }
 /*# sourceMappingURL=main.css.map */

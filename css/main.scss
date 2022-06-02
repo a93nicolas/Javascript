@@ -37,7 +37,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 5% 85% 10%;
     grid-template-areas: 
     "header"
     "main"
@@ -49,25 +49,35 @@ header{
     grid-area: header;
     background-color: $bg-color-bl;
     position: fixed;
-    width: 100vw;
+    width: 100%;
         .navegador{
-            display: flex ;
+            display: flex;
             justify-content: space-between;
-                &_logo{
-                    width: 20vw;
-                    height: 10vh;
+                &_hamburguesa{
+                    float: center;
+                    background-color: $bg-color-bl;
+                    color: $primary-color;
+                    border: none;
+                    font-size: 5vh;
+                    margin-left: 5%;
+                    cursor: pointer;
+                        &:hover{
+                            background-color: #01192b;
+                            border-radius: 5px;
+                            color: $hover-color;
+                            transition: 0.15s;
+                        }
                 }
                 &_menu{
                     flex-direction: column;
                     align-items: center;
-                    margin-right: 5vw;
                     background-color: rgb(34, 37, 37);
                     position: fixed;
-                    top: 10vh;
-                    width: 100%;
-                    right: 100%;
+                    top: 6.9%;
+                    width: 20%;
+                    height: 100%;
+                    right: 80%;
                     transition: 0.3s;
-                    height: calc(100% - 10vh);
                     overflow-y: auto;
                 }
                 &_item{
@@ -88,21 +98,15 @@ header{
                     color: $hover-color;
                     transition: 0.3s;
                 }
-                &_hamburguesa{
-                    float: center;
-                    background-color: $bg-color-bl;
-                    color: $primary-color;
-                    border: none;
-                    font-size: 7vh;
-                    margin-right: 7vw;
-                    display: block;
-                    cursor: pointer;
-                        &:hover{
-                            background-color: #01192b;
-                            border-radius: 5px;
-                            color: $hover-color;
-                            transition: 0.15s;
-                        }
+                &_logo{
+                    width: 0%;
+                    height: 5vh;
+                    margin-top: 1%;
+                }
+                &_buscador{
+                    width: 50%;
+                    height: 5vh;
+                    margin-top: 0.5%;
                 }
         }
 }
@@ -117,5 +121,5 @@ footer{
 }
 
 .navegador_menu_visible{
-    right: 0;
+    right: 50%;
 }

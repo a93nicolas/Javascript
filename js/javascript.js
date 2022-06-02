@@ -38,7 +38,7 @@ function mostrarResultado(res){
 	res.forEach(e => {
 		resultado += `<tr>
 						<td>${e.marca}</td>
-						<td>${e.precio}</td>
+						<td>$${e.precio}</td>
 						<td>${e.origen}</td>
 					  </tr>
 					`
