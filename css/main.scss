@@ -1,6 +1,8 @@
 $bg-color-bl: rgb(34,34,34);
 $bg-color-wo: rgba(255,255,255,0.7);
 $title-font:'Big Shoulders Stencil Display', cursive;
+$link-font: 'Alatsi', sans-serif;
+$link-size: 1.5rem;
 $primary-color: white;
 $hover-color: rgb(158, 156, 30);
 $title-size: 3em;
@@ -59,7 +61,7 @@ header{
                     color: $primary-color;
                     border: none;
                     font-size: 5vh;
-                    margin-left: 5%;
+                    margin-left: 3%;
                     cursor: pointer;
                         &:hover{
                             background-color: #01192b;
@@ -74,24 +76,21 @@ header{
                     background-color: rgb(34, 37, 37);
                     position: fixed;
                     margin-top: 3%;
-                    width: 20%;
+                    width: 15%;
                     height: 100%;
-                    right: 90%;
+                    right: 100%;
                     transition: 0.3s;
                     overflow-y: auto;
                 }
                 
                 &_item{
-                    font-size: 6vh;
-                    line-height: 10vh;
-                    margin: 0 1vw;
-                    text-transform: uppercase;
-                    width: max-content ;
+                    margin-left: 20%;
+                    padding: 2%;
                 }
                 &_link{
-                    padding: 0.7vw 0.7vh ;
+                    
                     color: $primary-color;
-                    font-family:$title-font;                   
+                    font-size:$link-size;                   
                 }
                 &_link:hover{
                     background-color: #01192b;
@@ -105,18 +104,51 @@ header{
                     margin-top: 0.2%;
                 }
                 &_buscador{
-                    width: 50%;
+                    width: 40%;
                     height: 4vh;
                     margin-top: 0.5%;
+                    margin-right: 10%;
                 }
         }
         .navegador_menu_visible{
-            right: 80%;
+            right: 85%;
+        }
+        .login_input{
+            display: flex;
+            margin-right: 2%;
         }
 }
 
 main{
+    text-align: center;
     grid-area: main;
+    margin: 5% 10% auto 10%;
+    table{
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        thead {      
+              th:nth-child(1) {
+                width: 30%;
+              }
+              
+              th:nth-child(2) {
+                width: 20%;
+              }
+              
+              th:nth-child(3) {
+                width: 15%;
+              }
+              
+              th:nth-child(4) {
+                width: 35%;
+              }
+        }
+          
+          th, td {
+            padding: 1%;
+          }
+        }
 }
 
 footer{

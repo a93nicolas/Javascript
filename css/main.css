@@ -59,7 +59,7 @@ header .navegador_hamburguesa {
   color: white;
   border: none;
   font-size: 5vh;
-  margin-left: 5%;
+  margin-left: 3%;
   cursor: pointer;
 }
 
@@ -82,28 +82,22 @@ header .navegador_menu {
   background-color: #222525;
   position: fixed;
   margin-top: 3%;
-  width: 20%;
+  width: 15%;
   height: 100%;
-  right: 90%;
+  right: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow-y: auto;
 }
 
 header .navegador_item {
-  font-size: 6vh;
-  line-height: 10vh;
-  margin: 0 1vw;
-  text-transform: uppercase;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  margin-left: 20%;
+  padding: 2%;
 }
 
 header .navegador_link {
-  padding: 0.7vw 0.7vh;
   color: white;
-  font-family: "Big Shoulders Stencil Display", cursive;
+  font-size: 1.5rem;
 }
 
 header .navegador_link:hover {
@@ -121,20 +115,56 @@ header .navegador_logo {
 }
 
 header .navegador_buscador {
-  width: 50%;
+  width: 40%;
   height: 4vh;
   margin-top: 0.5%;
+  margin-right: 10%;
 }
 
 header .navegador_menu_visible {
-  right: 80%;
+  right: 85%;
+}
+
+header .login_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2%;
 }
 
 main {
+  text-align: center;
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: main;
+  margin: 5% 10% auto 10%;
+}
+
+main table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+main table thead th:nth-child(1) {
+  width: 30%;
+}
+
+main table thead th:nth-child(2) {
+  width: 20%;
+}
+
+main table thead th:nth-child(3) {
+  width: 15%;
+}
+
+main table thead th:nth-child(4) {
+  width: 35%;
+}
+
+main table th, main table td {
+  padding: 1%;
 }
 
 footer {
