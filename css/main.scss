@@ -31,6 +31,7 @@ body{
     min-height: 100%;
     min-width: 100%;
     background-size: 100%;
+    background-color: orange;
 }
 
 .container > *{
@@ -123,6 +124,7 @@ main{
     text-align: center;
     grid-area: main;
     margin: 5% 10% auto 10%;
+    background-color: white;
     table{
         table-layout: fixed;
         width: 100%;
@@ -154,4 +156,10 @@ main{
 footer{
     grid-area: footer;
     text-align: center;
+    background-color: $bg-color-bl;
+    color: white;
+    width: 100%;
+        a{
+            color: orange;
+        }
 }

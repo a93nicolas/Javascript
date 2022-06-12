@@ -18,6 +18,7 @@ body {
   min-height: 100%;
   min-width: 100%;
   background-size: 100%;
+  background-color: orange;
 }
 
 .container > * {
@@ -139,6 +140,7 @@ main {
   -ms-grid-column: 1;
   grid-area: main;
   margin: 5% 10% auto 10%;
+  background-color: white;
 }
 
 main table {
@@ -172,5 +174,12 @@ footer {
   -ms-grid-column: 1;
   grid-area: footer;
   text-align: center;
+  background-color: #222222;
+  color: white;
+  width: 100%;
+}
+
+footer a {
+  color: orange;
 }
 /*# sourceMappingURL=main.css.map */

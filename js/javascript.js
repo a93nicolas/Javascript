@@ -69,3 +69,16 @@ const navMenu = document.querySelector(".navegador_menu")
 navHamburguesa.addEventListener("click", () => {
     navMenu.classList.toggle("navegador_menu_visible")
 })
+registrarUsuario();
+
+function registrarUsuario(){
+	let usuarioNuevo = {
+		usuario: "Nicosk8",
+		clave: "quilmes123",
+		nombre: "Nicolas",
+		apellido: "Fernandez",
+		email: "nico@hotmail.com",
+		edad: 27,
+	};
+	localStorage.setItem("usuario" , JSON.stringify(usuarioNuevo));
+};
